@@ -1,0 +1,29 @@
+package Class;
+
+import java.util.*;
+
+public class Clock {
+    public String getInfo(String str) {
+    	Date d=new Date();
+    	String[] s=d.toString().split(" ");
+    	if(str.equals("Day")){
+    		return s[0];
+    	}
+    	if(str.equals("Month")){
+    		return s[1];
+    	}
+    	if(str.equals("Date")){
+    		return s[2];
+    	}
+    	if(str.equals("Time")){
+    		return s[3];
+    	}
+    	if(str.equals("TimeZone")){
+    		return s[4];
+    	}
+    	if(str.equals("year")){
+    		return s[5];
+    	}
+    	return "Invalid Input";
+    }
+}

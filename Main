@@ -1,0 +1,10 @@
+package Class;
+import java.util.*;
+public class Main {
+
+	public static void main(String[] args) {
+         Clock c=new Clock();
+         Scanner sc=new Scanner(System.in);
+         System.out.print(c.getInfo(sc.nextLine()));
+	}
+}
